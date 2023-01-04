@@ -1,3 +1,7 @@
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +9,8 @@
   }
   
   html {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    background: rgb(2 88 103);
+    font-family: cursive;
+    background: rgb(5 40 47);
     color: whitesmoke;
   }
   
@@ -23,6 +27,13 @@
     font: inherit;
     margin-bottom: 1em;
     border-radius: 5px;
+    padding: 10px;
+  }
+  button{
+    cursor: pointer;
+    border: none;
+    margin: 25px auto;
+    padding: 10px;
   }
   
   main {
@@ -69,6 +80,25 @@
     color: whitesmoke;
     font-size: 1rem;
   }
-  body{
-    text-align: justify;
+  
+
+  header{
+    display: flex;
+    justify-content: space-between;
+  }
+  ul {
+  list-style: none;  
+  display: flex;
+  gap: 20px;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;  
+    
+
   }

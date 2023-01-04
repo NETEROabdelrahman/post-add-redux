@@ -1,3 +1,4 @@
+import React from "react";
 import { useDispatch } from "react-redux";
 import { reactionAdded } from "./postsSlice";
 
@@ -6,14 +7,12 @@ const reactionEmoji = {
     wow: '😮',
     heart: '❤️',
     rocket: '🚀',
-    coffee: '☕',
-    smile: '🙂',
+    coffee: '☕'
 }
 
-const ReactionButtons = ({ post }) => {
+let ReactionButtons = ({ post }) => {
     const dispatch = useDispatch()
 
-    console.log(Object.values(reactionEmoji))
     const reactionButtons = Object.entries(reactionEmoji).map(([name, emoji]) => {
         return (
             <button
@@ -31,4 +30,5 @@ const ReactionButtons = ({ post }) => {
 
     return <div>{reactionButtons}</div>
 }
+
 export default ReactionButtons
